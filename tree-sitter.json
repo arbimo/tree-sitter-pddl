@@ -1,0 +1,40 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "pddl",
+      "camelcase": "PDDL",
+      "title": "PDDL",
+      "scope": "source.pddl",
+      "file-types": [
+        "pddl",
+        "hddl"
+      ],
+      "injection-regex": "^pddl$",
+      "class-name": "TreeSitterPddl"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Parser for the PDDL language",
+    "authors": [
+      {
+        "name": "Arthur Bit-Monnot",
+        "email": "abitmonnot@laas.fr"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/arbimo/tree-sitter-pddl"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
