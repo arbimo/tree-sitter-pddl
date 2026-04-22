@@ -35,16 +35,13 @@ module.exports = grammar({
   supertypes: ($) => [$.expression],
 
   rules: {
-    pddl: ($) => seq("(", repeat(choice($.action, $.expression)), ")"),
-
-    action: ($) => seq("(", ":action", $.ident, repeat($.expression), ")"),
+    pddl: ($) => seq("(", repeat($.expression), ")"),
 
     expression: ($) => choice($.list, $._atom),
 
     _atom: ($) => choice($.number, $.string, $.keyword, $.param, $.ident),
 
     keyword: ($) => KEYWORD,
-    actionkw: ($) => "action",
     param: ($) => PARAMETER,
     number: ($) => choice($._float, $._integer),
     _float: ($) =>

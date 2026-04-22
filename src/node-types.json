@@ -30,21 +30,6 @@
     ]
   },
   {
-    "type": "action",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "expression",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
     "type": "list",
     "named": true,
     "fields": {},
@@ -74,10 +59,6 @@
       "required": false,
       "types": [
         {
-          "type": "action",
-          "named": true
-        },
-        {
           "type": "expression",
           "named": true
         }
@@ -90,10 +71,6 @@
   },
   {
     "type": ")",
-    "named": false
-  },
-  {
-    "type": ":action",
     "named": false
   },
   {
